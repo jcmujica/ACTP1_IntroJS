@@ -18,7 +18,9 @@ Mostrar una alerta cada vez que se haga clic sobre un párrafo
     <p> clic !! </p>
 
     <script>
-      $("p").click(function(){alert("Click en Parrafo!!!!!!!!!!!!!!111111111")});
+      $("p").click(function(event){
+        event.preventDefault();
+        alert("Click en Parrafo!!!!!!!!!!!!!!111111111")});
     </script>
   </body>
 </html>

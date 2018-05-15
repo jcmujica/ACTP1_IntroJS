@@ -23,7 +23,9 @@ ocuparemos el click derecho.
   <body>
   	<button>Click Derecho Aqui</button>
     <script>
-      $("button").contextmenu(function(){alert("Click!!!!!!!!!!!!!!111111111")});
+      $("button").contextmenu(function(){
+        event.preventDefault();
+        alert("Click!!!!!!!!!!!!!!111111111")});
     </script>
   </body>
 </html>
